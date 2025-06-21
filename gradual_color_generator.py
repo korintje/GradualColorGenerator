@@ -1,8 +1,8 @@
-from PyQt6.QtWidgets import (
+from PySide6.QtWidgets import (
     QApplication, QWidget, QVBoxLayout, QHBoxLayout, QPushButton, QLineEdit,
     QColorDialog, QLabel, QSpinBox, QTextEdit, QFileDialog, QComboBox, QScrollArea
 )
-from PyQt6.QtGui import QColor
+from PySide6.QtGui import QColor
 import sys
 from datetime import datetime
 import math
@@ -102,7 +102,7 @@ class ColorGenerator(QWidget):
 
         self.setLayout(self.layout)
 
-        # 初期生成
+        # Initial generation
         self.generate_colors_and_update()
 
     def create_color_input(self, default_hex, text_changed_handler):
